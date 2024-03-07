@@ -1,2 +1,3 @@
-# HKReimu.github.io
-This is my blog link: HKreimu.github.io
+# HKReimu's blog
+## Link
+This is my blog link: [HKreimu's blog](hkreimu.github.io)
