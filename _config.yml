@@ -1,0 +1,4 @@
+deploy:
+  type: git
+  repository: git@github.com:HKReimu/HKReimu.github.io.git
+  branch: main
