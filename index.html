@@ -33,6 +33,15 @@
 							<!-- Header -->
 								<header id="header">
 									<a href="index.html" class="logo"><strong style="color: red;">HKReimu</strong>'s <strong style="color: gold;">blog</strong></a>
+  									<audio id="audio" src="./assets/audio/Foxtail-Grass Studio - 沢の河城工務店 (泽之河城工务店)_HQ(1).mp3" controls="false" hidden="true"></audio>
+  									<span id="text" style="cursor: pointer;"><strong style="color: grey;">来点背景音乐？</strong></span>
+  									<script>
+    								var text = document.getElementById("text");
+    								var audio = document.getElementById("audio");
+    								text.addEventListener("click", function() {
+      								audio.play();
+    								});
+  									</script>
 									<ul class="icons">
 										<li><a href="https://twitter.com/pu_lu92240" class="icon brands fa-twitter" target="_blank" style="color:#00acee;"><span class="label">Twitter</span></a></li>
 										<li><a href="https://www.youtube.com/channel/UCkwrWw5Vnhvjnd7tuQ-Kh6g" class="icon brands fa-youtube" target="_blank" style="color: #ff0000;"><span class="label">Youtube</span></a></li>
