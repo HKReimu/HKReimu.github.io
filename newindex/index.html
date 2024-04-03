@@ -6,24 +6,17 @@
 -->
 <html>
 	<head>
-		<!-- Google Tag Manager -->
-			<script>
-			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-PDN8KR8Z');
-			</script>
-		<!-- End Google Tag Manager -->
-	      <!-- Google tag (gtag.js) -->
-              <script async src="https://www.googletagmanager.com/gtag/js?id=G-TKNV4P0LWT"></script>
-                <script>
-                   window.dataLayer = window.dataLayer || [];
-                   function gtag(){dataLayer.push(arguments);}
-                   gtag('js', new Date());
-
-                   gtag('config', 'G-TKNV4P0LWT');
-                </script>
+				<script>
+					var OGtx = document.getElementById("tx1");
+					var OGif = document.getElementById("OG");
+					text.addEventListener("click" ,function() {
+						OGif.style.display="none";
+					});
+					function OG(){
+						document.getElementById("OG").style.display="none";
+						document.getElementById("test").style.display="none";
+					}
+				</script>
 		<title>HKReimu's blog</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -34,14 +27,6 @@
 	</head>
 	<body class="is-preload">
 		
-		<!-- Google Tag Manager (noscript) -->
-		<noscript>
-			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDN8KR8Z"
-			height="0" width="0" style="display:none;visibility:hidden">
-			</iframe>
-		</noscript>
-		<!-- End Google Tag Manager (noscript) -->
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -71,7 +56,7 @@
 							<!-- Section -->
 						</div>
 						<section>
-								<iframe src="./Offical Game.html" scrolling="no" width="100%" height="7800px"></iframe>
+								<iframe  id ="OG" src="./Offical Game.html" scrolling="no" width="100%" height="7800px" ></iframe>
 							</section>
 					</div>
 
@@ -114,7 +99,7 @@
 										</li>
 										-->
 										<!--Steam链接-->
-										<li><a href="./Offical Game.html">官方游戏</a></li>
+										<li><span id="test" style="cursor: pointer;" onclick="OG">官方游戏</span></li>
 										<!--空闲页面-->
 										<li><a href="#">Etiam Dolore</a></li>
 										<li><a href="#">Adipiscing</a></li>
@@ -142,7 +127,7 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Ante interdum</h2>
+										<h2 id="test">Ante interdum</h2>
 									</header>
 									<div class="mini-posts">
 										<article>
