@@ -6,23 +6,18 @@
 -->
 <html>
 	<head>
-				<script>
-					var OGtx = document.getElementById("tx1");
-					var OGif = document.getElementById("OG");
-					text.addEventListener("click" ,function() {
-						OGif.style.display="none";
-					});
-					function OG(){
-						document.getElementById("OG").style.display="none";
-						document.getElementById("test").style.display="none";
-					}
-				</script>
+		<script>
+			document.addEventListener("DOMContentLoaded",function(){
+				var hide1 = document.getElementById("OfficalGame");
+				hide1.style.display="none";
+				var onlyshow = document.getElementById
+			});
+		</script>
+		<script src="./assets/js/pagecontrol.js"></script>
 		<title>HKReimu's blog</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="html" href="./assets/html/basic.html">
-		<a hidden><embed type="text/html" src="./assets/html/basic.html" width="0" height="0"/></a>
 		<link rel="icon" href="./images/icon.png" type="image/x-icon" />
 	</head>
 	<body class="is-preload">
@@ -56,8 +51,11 @@
 							<!-- Section -->
 						</div>
 						<section>
-								<iframe  id ="OG" src="./Offical Game.html" scrolling="no" width="100%" height="7800px" ></iframe>
-							</section>
+							<p>
+								<iframe  id ="OfficalGame" src="./Offical Game.html" scrolling="no" width="90%" height="7800px"></iframe>
+								<iframe id="index" src="./iframe/index.html" scrolling="no" width="100%" height="1000px"></iframe>
+							</p>
+						</section>
 					</div>
 
 				<!-- Sidebar -->
@@ -74,7 +72,7 @@
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
-										<h2>菜单</h2>
+										<h2 onclick="OGhidden">菜单</h2>
 									</header>
 									<ul>
 										<li><a href="index.html">主页</a></li>
@@ -99,7 +97,7 @@
 										</li>
 										-->
 										<!--Steam链接-->
-										<li><span id="test" style="cursor: pointer;" onclick="OG">官方游戏</span></li>
+										<li><span id="test" style="cursor: pointer;" onclick="hideOfficalGame()">官方游戏</span></li>
 										<!--空闲页面-->
 										<li><a href="#">Etiam Dolore</a></li>
 										<li><a href="#">Adipiscing</a></li>
